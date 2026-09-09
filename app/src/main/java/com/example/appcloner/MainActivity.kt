@@ -94,7 +94,7 @@ class MainActivity : AppCompatActivity() {
                 putExtra(Intent.EXTRA_SHORTCUT_NAME, app.label)
                 putExtra(
                     Intent.EXTRA_SHORTCUT_ICON_RESOURCE,
-                    Intent.ShortcutIconResource.fromContext(this, R.drawable.ic_launcher)
+                    Intent.ShortcutIconResource.fromContext(this@MainActivity, R.drawable.ic_launcher)
                 )
             }
             sendBroadcast(addIntent)
